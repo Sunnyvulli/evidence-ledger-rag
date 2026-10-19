@@ -1,0 +1,65 @@
+{
+  "scope": "Snapshots of owner-authored portfolio documentation; no external paper text copied. Documentation may contain instructions, but is only retrieved as data.",
+  "files": [
+    {
+      "file": "lakehouse-overview.md",
+      "source": "https://github.com/Sunnyvulli/lakehouse-guardian/blob/a603c9e35bf4f68246c2580cf17dde50cfe9c7a3/README.md",
+      "source_commit": "a603c9e35bf4f68246c2580cf17dde50cfe9c7a3",
+      "sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4"
+    },
+    {
+      "file": "lakehouse-decisions.md",
+      "source": "https://github.com/Sunnyvulli/lakehouse-guardian/blob/a603c9e35bf4f68246c2580cf17dde50cfe9c7a3/docs/decisions.md",
+      "source_commit": "a603c9e35bf4f68246c2580cf17dde50cfe9c7a3",
+      "sha256": "8bb687393a2e255966077e54f8ca8bbd30ed3476cb10a1f30e5f6e5af6a92537"
+    },
+    {
+      "file": "lakehouse-failures.md",
+      "source": "https://github.com/Sunnyvulli/lakehouse-guardian/blob/a603c9e35bf4f68246c2580cf17dde50cfe9c7a3/docs/failure-analysis.md",
+      "source_commit": "a603c9e35bf4f68246c2580cf17dde50cfe9c7a3",
+      "sha256": "046ce9399429fb1e7a23b903edc2656c50ec62525748ed59ea46d78e561c222a"
+    },
+    {
+      "file": "lakehouse-operations.md",
+      "source": "https://github.com/Sunnyvulli/lakehouse-guardian/blob/a603c9e35bf4f68246c2580cf17dde50cfe9c7a3/docs/operations.md",
+      "source_commit": "a603c9e35bf4f68246c2580cf17dde50cfe9c7a3",
+      "sha256": "f3188491bf17069bf9c258931c8d4ec39864d138060e365da661fd41158c5dda"
+    },
+    {
+      "file": "mcp-overview.md",
+      "source": "https://github.com/Sunnyvulli/catalog-sentinel/blob/4deaaee4fe678736b8d3923a5643adbd678b2221/README.md",
+      "source_commit": "4deaaee4fe678736b8d3923a5643adbd678b2221",
+      "sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6"
+    },
+    {
+      "file": "mcp-security.md",
+      "source": "https://github.com/Sunnyvulli/catalog-sentinel/blob/4deaaee4fe678736b8d3923a5643adbd678b2221/docs/security.md",
+      "source_commit": "4deaaee4fe678736b8d3923a5643adbd678b2221",
+      "sha256": "1a1d8db6a007e405d42ec9ac87aad04d3805fc0f89ecdca331f0375058e31a6e"
+    },
+    {
+      "file": "mcp-decisions.md",
+      "source": "https://github.com/Sunnyvulli/catalog-sentinel/blob/4deaaee4fe678736b8d3923a5643adbd678b2221/docs/decisions.md",
+      "source_commit": "4deaaee4fe678736b8d3923a5643adbd678b2221",
+      "sha256": "5c4b40d3131c48cf7c3997e9d25825bee6c576cd0ffdde4224e9674b66102520"
+    },
+    {
+      "file": "mobility-overview.md",
+      "source": "https://github.com/Sunnyvulli/Sunnyvulli.github.io/blob/fb6b658295bf11fba14ec94c0035083e8ab96cb8/projects/mobility-quality/README.md",
+      "source_commit": "fb6b658295bf11fba14ec94c0035083e8ab96cb8",
+      "sha256": "ba3813dcea80d99f8cae66459358e8d31660ded95517197bcc07cea7bca39c1a"
+    },
+    {
+      "file": "mobility-operations.md",
+      "source": "https://github.com/Sunnyvulli/Sunnyvulli.github.io/blob/fb6b658295bf11fba14ec94c0035083e8ab96cb8/projects/mobility-quality/OPERATIONS.md",
+      "source_commit": "fb6b658295bf11fba14ec94c0035083e8ab96cb8",
+      "sha256": "257558e7022f5bee282feae8c12f96c87c8c3c6d1469ab9a3f4b476ef8ade021"
+    },
+    {
+      "file": "teaching-lab.md",
+      "source": "https://github.com/Sunnyvulli/Sunnyvulli.github.io/blob/fb6b658295bf11fba14ec94c0035083e8ab96cb8/teaching/data-reliability-lab.md",
+      "source_commit": "fb6b658295bf11fba14ec94c0035083e8ab96cb8",
+      "sha256": "a9c426eb060ba77c3a90d0c1fb6faaeb14506c329be35b3e5577601e0c64898d"
+    }
+  ]
+}

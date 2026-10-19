@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "query": "How is an operator approval tied to the exact proposal hash?",
+    "expected_file": "lakehouse-decisions.md"
+  },
+  {
+    "id": 2,
+    "query": "Which plausible count inflation faults evade the checks?",
+    "expected_file": "lakehouse-failures.md"
+  },
+  {
+    "id": 3,
+    "query": "Why is this not a complete AWS deployment?",
+    "expected_file": "lakehouse-overview.md"
+  },
+  {
+    "id": 4,
+    "query": "How can I run the real Airflow integration?",
+    "expected_file": "lakehouse-operations.md"
+  },
+  {
+    "id": 5,
+    "query": "What prevents a caller from assigning an analyst role?",
+    "expected_file": "mcp-security.md"
+  },
+  {
+    "id": 6,
+    "query": "Why is remote OAuth not implemented?",
+    "expected_file": "mcp-decisions.md"
+  },
+  {
+    "id": 7,
+    "query": "What happens when the audit sink fails?",
+    "expected_file": "mcp-overview.md"
+  },
+  {
+    "id": 8,
+    "query": "How many actual stdio requests were evaluated?",
+    "expected_file": "mcp-overview.md"
+  },
+  {
+    "id": 9,
+    "query": "What is the source of the historical bike records?",
+    "expected_file": "mobility-overview.md"
+  },
+  {
+    "id": 10,
+    "query": "What does a missing database return over HTTP?",
+    "expected_file": "mobility-operations.md"
+  },
+  {
+    "id": 11,
+    "query": "Why is shuffled evaluation different from time based evaluation?",
+    "expected_file": "teaching-lab.md"
+  },
+  {
+    "id": 12,
+    "query": "How do target components leak rental counts?",
+    "expected_file": "teaching-lab.md"
+  },
+  {
+    "id": 13,
+    "query": "How does dbt gate the Iceberg commit?",
+    "expected_file": "lakehouse-overview.md"
+  },
+  {
+    "id": 14,
+    "query": "What are the limits of hash chained audit records?",
+    "expected_file": "mcp-security.md"
+  }
+]
