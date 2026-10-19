@@ -30,13 +30,13 @@ python -m ledger.cli query
       }
     },
     {
-      "text": "- Eleven behavioral tests cover contracts, schema errors, approval denial, forged proposal hashes, instruction strings, string booleans, and explicit scoped approval.",
+      "text": "Run `python -m guardian.demo` without the approval flag to inspect the interrupted proposal with no publication.",
       "citations": [
         {
-          "chunk_id": "c702d3ada2b596405f738367c6b3f83836ba8b213dd14b66132adceef37b9325",
+          "chunk_id": "3d193677d1566563f69036f90344eb6ada7fff2dae26c107b4b1aedf9fd5c1a4",
           "document": "lakehouse-overview.md",
           "document_sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4",
-          "text": "and fault experiments. ## What the run demonstrates - 17,379 real hourly observations, 731 observed dates, and 3,292,679 represented rentals; input SHA-256 and versions retained. - Eleven behavioral tests cover contracts, schema errors, approval denial, forged proposal hashes, instruction strings, string booleans, and explicit scoped approval. - 21 controlled batches, seeds 7/17/29: row detection precision 1.00, recall 0.80; zero alarms on three clean controls. These are designed faults on one dataset, not real-world detection accuracy. - Spark transforms typed rows; dbt gates daily aggregates before Iceberg mutation. Repeating an identical snapshot is checked against actual table contents and returns `unchanged`. - The first observed local run took about 15 seconds after dependency installation; timing depends on the environment. No paid model API is invoked; cloud cost is unmeasured, not zero. ## Architecture ```mermaid flowchart TD A[Attributed UCI CSV] --> B[Contracts and bounded proposal] B --> C[LangGraph approval interrupt] C -->"
+          "text": "# Lakehouse Guardian A local Spark/Iceberg data-quality workflow with dbt checks, LangGraph approval gates, and measured fault-injection evaluations on UCI Bike Sharing data. [![Verification](https://github.com/Sunnyvulli/lakehouse-guardian/actions/workflows/verify.yml/badge.svg)](https://github.com/Sunnyvulli/lakehouse-guardian/actions/workflows/verify.yml) **Inspect in 60 seconds:** [recorded run](results/demo.json) \u00b7 [fault evaluation](results/evaluation.json) \u00b7 [failure analysis](docs/failure-analysis.md) \u00b7 [decisions](docs/decisions.md). This is a local reference system; AWS resources have not been applied. ## Quick start Python 3.12, Java 17, and GNU Make on Linux are the tested prerequisites. The first installation downloads Spark and scientific packages; no five-minute clean-OS promise is made. ```sh python3 -m venv .venv . .venv/bin/activate pip install -r requirements.txt make run ``` `make run` explicitly approves publication of the bundled, attributed local fixture. It executes an actual LangGraph interrupt/resume, Spark transformation, five dbt checks, and an Iceberg commit. It does not approve any cloud change. Run `python -m guardian.demo` without the approval flag to inspect the interrupted proposal with no publication. `make test eval` runs the behavioral tests"
         }
       ],
       "triage": {
@@ -54,8 +54,8 @@ python -m ledger.evaluate
   "chunks": 34,
   "queries": 14,
   "latency_seconds": {
-    "median_retrieval": 0.03985432600001104,
-    "p95_retrieval": 0.04783131900001081,
+    "median_retrieval": 0.04332477299999482,
+    "p95_retrieval": 0.047226504000036584,
     "scope": "Local in-process retrieval including vectorizer refit; excludes dependency installation and HTTP transport."
   }
 }

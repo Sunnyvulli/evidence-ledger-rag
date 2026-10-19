@@ -1,0 +1,76 @@
+{
+  "trigger_query": "What happens when the audit sink fails?",
+  "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+  "initial_claims": [
+    {
+      "text": "Arguments are hashed instead of copied into the audit.",
+      "citations": [
+        {
+          "chunk_id": "2a434309c4a81c8339db21dd7823fb979857f53c3b84fd4ef4d3d3a49f5e4bf5",
+          "document": "mcp-overview.md",
+          "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+          "text": "describe one allowlisted dataset, or read at most 31 dates of daily aggregates. No arbitrary SQL, file access, shell, URL fetch, credential, or raw-observation tool exists. - MCP input schemas validate literal dataset names and strict bounded integer limits; date ranges are checked by the handler. - SQLite opens with `mode=ro`, query-only mode, disabled extension loading, an authorizer limited to catalog/daily reads, and an opcode budget. - Middleware audits requests around SDK validation/lookup, including invalid tool/schema attempts. Arguments are hashed instead of copied into the audit. Sink failure withholds results. - Per-process locking, flushing and fsync protect application appends; hash chaining detects edited retained entries. OS-owner rewriting/truncation is outside this guarantee. ## Architecture ```mermaid flowchart TD A[Trusted stdio host and fixed role] --> B[MCP schema and audit middleware] B --> C[Allowlisted read-only handlers] C --> D[SQLite query-only connection] B --> E[Hashed-argument audit chain] ``` ## Measured evidence The recorded run"
+        }
+      ],
+      "triage": {
+        "risk": 0.0,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      }
+    },
+    {
+      "text": "The API opens SQLite explicitly read-only and returns 503 without creating a database file when its snapshot is unavailable.",
+      "citations": [
+        {
+          "chunk_id": "2ad76cded34b26eb072542bad482da515417f4d5f15c2e901527fb644b896c56",
+          "document": "mobility-operations.md",
+          "document_sha256": "257558e7022f5bee282feae8c12f96c87c8c3c6d1469ab9a3f4b476ef8ade021",
+          "text": "snapshot; it is not a live ingestion service. The API opens SQLite explicitly read-only and returns 503 without creating a database file when its snapshot is unavailable."
+        }
+      ],
+      "triage": {
+        "risk": 0.0,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      }
+    }
+  ],
+  "revised_claims": [
+    {
+      "text": "Sink failure withholds results.",
+      "citations": [
+        {
+          "chunk_id": "2a434309c4a81c8339db21dd7823fb979857f53c3b84fd4ef4d3d3a49f5e4bf5",
+          "document": "mcp-overview.md",
+          "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+          "text": "describe one allowlisted dataset, or read at most 31 dates of daily aggregates. No arbitrary SQL, file access, shell, URL fetch, credential, or raw-observation tool exists. - MCP input schemas validate literal dataset names and strict bounded integer limits; date ranges are checked by the handler. - SQLite opens with `mode=ro`, query-only mode, disabled extension loading, an authorizer limited to catalog/daily reads, and an opcode budget. - Middleware audits requests around SDK validation/lookup, including invalid tool/schema attempts. Arguments are hashed instead of copied into the audit. Sink failure withholds results. - Per-process locking, flushing and fsync protect application appends; hash chaining detects edited retained entries. OS-owner rewriting/truncation is outside this guarantee. ## Architecture ```mermaid flowchart TD A[Trusted stdio host and fixed role] --> B[MCP schema and audit middleware] B --> C[Allowlisted read-only handlers] C --> D[SQLite query-only connection] B --> E[Hashed-argument audit chain] ``` ## Measured evidence The recorded run"
+        }
+      ],
+      "triage": {
+        "risk": 0.0,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      }
+    },
+    {
+      "text": "Fourteen behavioral tests additionally check write/attach/raw-table denial, caller-supplied role escalation, strict types, inverted dates, injected catalog instructions, audit tampering, schema-rejection auditing, and audit-sink failure.",
+      "citations": [
+        {
+          "chunk_id": "1cd7577056bbea09c1038a921fe0bbd21f2fe358f2ac2c8997de70b5dc250a06",
+          "document": "mcp-overview.md",
+          "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+          "text": "issued 16 tool requests across two real stdio sessions: all 13 expected denials were enforced, three allowed calls succeeded, and database bytes remained unchanged. Latency and SDK version are in the raw result; timing is local, includes validation/error handling and excludes subprocess startup from each request timer. There were no billed model/API calls. This is a small designed misuse suite, not an independent security audit or proof against all prompt injections. Fourteen behavioral tests additionally check write/attach/raw-table denial, caller-supplied role escalation, strict types, inverted dates, injected catalog instructions, audit tampering, schema-rejection auditing, and audit-sink failure. Tool annotations are only hints; enforcement comes from code and SQLite. ## Failure story and limits A catalog description can contain \u201cignore restrictions\u201d text. The server faithfully returns that untrusted data, but it cannot alter the host-assigned role. An incautious consuming agent could still repeat those instructions or misuse other tools outside this server. This"
+        }
+      ],
+      "triage": {
+        "risk": 0.0,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      }
+    }
+  ],
+  "initial_total_claims": 28,
+  "revised_total_claims": 26,
+  "behavioral_tests": 18,
+  "limit": "The inspected development query informed this heuristic; not an independent semantic-quality benchmark."
+}

@@ -119,6 +119,23 @@ class LedgerTests(unittest.TestCase):
             self.assertIn(claim["text"], citation["text"])
             self.assertEqual(citation["document_sha256"], hashes[citation["document"]])
 
+    def test_specific_failure_sentence_beats_generic_audit_sentence(self):
+        (self.corpus / "a.md").write_text(
+            "Arguments are hashed instead of copied into the audit. "
+            "Audit records preserve metadata. Audit operations are local. "
+            "Sink failure withholds results."
+        )
+        ingest(self.corpus, self.database)
+        with connect(self.database) as db:
+            result = answer(db, "What happens when the audit sink fails?")
+        self.assertEqual(result["claims"][0]["text"], "Sink failure withholds results.")
+
+    def test_real_corpus_audit_sink_question(self):
+        ingest(Path(__file__).resolve().parents[1] / "knowledge", self.database)
+        with connect(self.database) as db:
+            result = answer(db, "What happens when the audit sink fails?")
+        self.assertEqual(result["claims"][0]["text"], "Sink failure withholds results.")
+
     def test_stopwords_and_unknown_query_abstain(self):
         with connect(self.database) as db:
             for q in ("the and is", "zxqvvvklmn"):

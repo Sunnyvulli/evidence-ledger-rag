@@ -1,6 +1,8 @@
 """Bounded transactional indexing, lexical retrieval and exact-span answers."""
 
+from collections import Counter
 from contextlib import contextmanager
+import math
 import hashlib
 import json
 import re
@@ -180,13 +182,56 @@ def retrieve(db, query, k=3, method="hybrid"):
 
 def answer(db, query, k=3, method="hybrid"):
     hits = retrieve(db, query, k, method)
-    claims = []
-    for hit in hits[:2]:
+    question_words = {
+        "what",
+        "which",
+        "how",
+        "why",
+        "when",
+        "where",
+        "does",
+        "do",
+        "can",
+        "i",
+        "we",
+        "you",
+        "happens",
+        "happen",
+    }
+    query_terms = tokens(query) - question_words
+    source_sentences = [
+        sentence
+        for (text,) in db.execute("SELECT text FROM chunks ORDER BY id")
+        for sentence in re.split(r"(?<=[.!?])\s+", text)
+    ]
+    frequencies = Counter(
+        term for sentence in source_sentences for term in tokens(sentence)
+    )
+    weights = {
+        term: math.log1p(len(source_sentences) / (1 + frequencies[term]))
+        for term in query_terms
+    }
+
+    def score(sentence):
+        return sum(
+            weights[term] for term in sorted(tokens(sentence) & query_terms)
+        ) / math.sqrt(max(1, len(tokens(sentence))))
+
+    candidates = []
+    for rank, hit in enumerate(hits):
         sentences = re.split(r"(?<=[.!?])\s+", hit["text"])
-        best = max(sentences, key=lambda s: len(tokens(s) & tokens(query)))
-        # Fixed development heuristic; not calibrated confidence or a safety guarantee.
-        if hit["character_similarity"] < 0.08 or not (tokens(best) & tokens(query)):
+        best = max(sentences, key=score)
+        # Development heuristic, not calibrated confidence or semantic entailment.
+        if hit["character_similarity"] >= 0.08 and score(best) > 0:
+            candidates.append((score(best), rank, best, hit))
+    candidates.sort(key=lambda item: (-item[0], item[1]))
+    claims, seen = [], set()
+    for relevance, _, best, hit in candidates:
+        if len(claims) == 2 or relevance < 0.6 * candidates[0][0]:
+            break
+        if best in seen:
             continue
+        seen.add(best)
         citation = {
             key: hit[key] for key in ("chunk_id", "document", "document_sha256", "text")
         }

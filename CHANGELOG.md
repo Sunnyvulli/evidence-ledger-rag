@@ -7,3 +7,8 @@
 - Added actual loopback JSON/monitoring behavior, 16 behavioral tests, formatter, full-history scan CI and static recorded-results explorer.
 
 A release/tag is pending CI and the explicit release milestone. No AWS/model-generation/public-backend deployment is claimed.
+
+## Unreleased extraction fix - 2026-10-19
+- Browser review reproduced an exact-but-unresponsive audit-sink answer.
+- Added question-term rarity/length scoring across retrieved chunks and a relative secondary-extract threshold.
+- Two before-failing regressions bring the suite to 18 tests; retained initial/revised outputs and development-tuning limits. Retrieval scores and guard failures remain unchanged.

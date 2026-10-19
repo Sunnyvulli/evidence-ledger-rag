@@ -1,0 +1,1209 @@
+{
+  "scope": "Authored documentation queries and designed lexical-guard probes; no learned generation or independent relevance labels.",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "versions": {
+    "scikit-learn": "1.8.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "query_sha256": "334d345dad5db3e6ea0b9128fe17207a81b9fcacc21393bf321ee359fa7e1ce4",
+  "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+  "documents": 10,
+  "chunks": 34,
+  "queries": 14,
+  "retrieval": {
+    "bm25": {
+      "expected_file_hit_at_3_chunks": 0.7142857142857143,
+      "mrr_at_3_chunks": 0.5714285714285714,
+      "queries": [
+        {
+          "id": 1,
+          "query": "How is an operator approval tied to the exact proposal hash?",
+          "expected_file": "lakehouse-decisions.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-decisions.md",
+            "lakehouse-failures.md"
+          ],
+          "seconds": 0.04561635200002456
+        },
+        {
+          "id": 2,
+          "query": "Which plausible count inflation faults evade the checks?",
+          "expected_file": "lakehouse-failures.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "lakehouse-failures.md",
+            "lakehouse-overview.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.04325702899996031
+        },
+        {
+          "id": 3,
+          "query": "Why is this not a complete AWS deployment?",
+          "expected_file": "lakehouse-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-decisions.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.09123417700004666
+        },
+        {
+          "id": 4,
+          "query": "How can I run the real Airflow integration?",
+          "expected_file": "lakehouse-operations.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-decisions.md",
+            "lakehouse-failures.md"
+          ],
+          "seconds": 0.041112405000035324
+        },
+        {
+          "id": 5,
+          "query": "What prevents a caller from assigning an analyst role?",
+          "expected_file": "mcp-security.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-security.md",
+            "mcp-overview.md"
+          ],
+          "seconds": 0.046409186999994745
+        },
+        {
+          "id": 6,
+          "query": "Why is remote OAuth not implemented?",
+          "expected_file": "mcp-decisions.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-security.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.03741001499997765
+        },
+        {
+          "id": 7,
+          "query": "What happens when the audit sink fails?",
+          "expected_file": "mcp-overview.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "mcp-security.md",
+            "mcp-overview.md",
+            "mcp-overview.md"
+          ],
+          "seconds": 0.03801367799997024
+        },
+        {
+          "id": 8,
+          "query": "How many actual stdio requests were evaluated?",
+          "expected_file": "mcp-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "mcp-overview.md"
+          ],
+          "seconds": 0.03869516500003556
+        },
+        {
+          "id": 9,
+          "query": "What is the source of the historical bike records?",
+          "expected_file": "mobility-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mobility-overview.md",
+            "lakehouse-overview.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.038541375000022526
+        },
+        {
+          "id": 10,
+          "query": "What does a missing database return over HTTP?",
+          "expected_file": "mobility-operations.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "mobility-overview.md",
+            "lakehouse-operations.md"
+          ],
+          "seconds": 0.03867551600001207
+        },
+        {
+          "id": 11,
+          "query": "Why is shuffled evaluation different from time based evaluation?",
+          "expected_file": "teaching-lab.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "lakehouse-failures.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.03817527900002915
+        },
+        {
+          "id": 12,
+          "query": "How do target components leak rental counts?",
+          "expected_file": "teaching-lab.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "teaching-lab.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.03771569200000613
+        },
+        {
+          "id": 13,
+          "query": "How does dbt gate the Iceberg commit?",
+          "expected_file": "lakehouse-overview.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "lakehouse-decisions.md",
+            "lakehouse-overview.md",
+            "lakehouse-overview.md"
+          ],
+          "seconds": 0.037127583999904346
+        },
+        {
+          "id": 14,
+          "query": "What are the limits of hash chained audit records?",
+          "expected_file": "mcp-security.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "teaching-lab.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.03777443999990737
+        }
+      ]
+    },
+    "character": {
+      "expected_file_hit_at_3_chunks": 0.7857142857142857,
+      "mrr_at_3_chunks": 0.619047619047619,
+      "queries": [
+        {
+          "id": 1,
+          "query": "How is an operator approval tied to the exact proposal hash?",
+          "expected_file": "lakehouse-decisions.md",
+          "expected_file_rank": 3,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-overview.md",
+            "lakehouse-decisions.md"
+          ],
+          "seconds": 0.0394563920000337
+        },
+        {
+          "id": 2,
+          "query": "Which plausible count inflation faults evade the checks?",
+          "expected_file": "lakehouse-failures.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "lakehouse-failures.md",
+            "lakehouse-overview.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.037957722999976795
+        },
+        {
+          "id": 3,
+          "query": "Why is this not a complete AWS deployment?",
+          "expected_file": "lakehouse-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "mobility-overview.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.03742341600002419
+        },
+        {
+          "id": 4,
+          "query": "How can I run the real Airflow integration?",
+          "expected_file": "lakehouse-operations.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-failures.md",
+            "lakehouse-overview.md"
+          ],
+          "seconds": 0.038798900000074354
+        },
+        {
+          "id": 5,
+          "query": "What prevents a caller from assigning an analyst role?",
+          "expected_file": "mcp-security.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "mcp-decisions.md"
+          ],
+          "seconds": 0.03774678899992523
+        },
+        {
+          "id": 6,
+          "query": "Why is remote OAuth not implemented?",
+          "expected_file": "mcp-decisions.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "mcp-security.md",
+            "mcp-overview.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.038757087000021784
+        },
+        {
+          "id": 7,
+          "query": "What happens when the audit sink fails?",
+          "expected_file": "mcp-overview.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "mobility-operations.md",
+            "mcp-overview.md",
+            "mcp-overview.md"
+          ],
+          "seconds": 0.03802013699998952
+        },
+        {
+          "id": 8,
+          "query": "How many actual stdio requests were evaluated?",
+          "expected_file": "mcp-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "lakehouse-failures.md"
+          ],
+          "seconds": 0.04342595600007826
+        },
+        {
+          "id": 9,
+          "query": "What is the source of the historical bike records?",
+          "expected_file": "mobility-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mobility-overview.md",
+            "mcp-overview.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.040483365999989473
+        },
+        {
+          "id": 10,
+          "query": "What does a missing database return over HTTP?",
+          "expected_file": "mobility-operations.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mobility-operations.md",
+            "mobility-operations.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.037997643000039716
+        },
+        {
+          "id": 11,
+          "query": "Why is shuffled evaluation different from time based evaluation?",
+          "expected_file": "teaching-lab.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "lakehouse-failures.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.04028782399996089
+        },
+        {
+          "id": 12,
+          "query": "How do target components leak rental counts?",
+          "expected_file": "teaching-lab.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "teaching-lab.md",
+            "mobility-operations.md"
+          ],
+          "seconds": 0.04009497499998815
+        },
+        {
+          "id": 13,
+          "query": "How does dbt gate the Iceberg commit?",
+          "expected_file": "lakehouse-overview.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "lakehouse-decisions.md",
+            "lakehouse-overview.md",
+            "lakehouse-overview.md"
+          ],
+          "seconds": 0.03814768799998092
+        },
+        {
+          "id": 14,
+          "query": "What are the limits of hash chained audit records?",
+          "expected_file": "mcp-security.md",
+          "expected_file_rank": 3,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "mcp-security.md"
+          ],
+          "seconds": 0.03971677100003035
+        }
+      ]
+    },
+    "hybrid": {
+      "expected_file_hit_at_3_chunks": 0.7857142857142857,
+      "mrr_at_3_chunks": 0.630952380952381,
+      "queries": [
+        {
+          "id": 1,
+          "query": "How is an operator approval tied to the exact proposal hash?",
+          "expected_file": "lakehouse-decisions.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-decisions.md",
+            "lakehouse-overview.md"
+          ],
+          "seconds": 0.039991880999991736
+        },
+        {
+          "id": 2,
+          "query": "Which plausible count inflation faults evade the checks?",
+          "expected_file": "lakehouse-failures.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "lakehouse-failures.md",
+            "lakehouse-overview.md",
+            "lakehouse-operations.md"
+          ],
+          "seconds": 0.03948889099990538
+        },
+        {
+          "id": 3,
+          "query": "Why is this not a complete AWS deployment?",
+          "expected_file": "lakehouse-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "mobility-overview.md",
+            "lakehouse-decisions.md"
+          ],
+          "seconds": 0.03999344400006066
+        },
+        {
+          "id": 4,
+          "query": "How can I run the real Airflow integration?",
+          "expected_file": "lakehouse-operations.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "lakehouse-overview.md",
+            "lakehouse-failures.md",
+            "lakehouse-decisions.md"
+          ],
+          "seconds": 0.039100220000023
+        },
+        {
+          "id": 5,
+          "query": "What prevents a caller from assigning an analyst role?",
+          "expected_file": "mcp-security.md",
+          "expected_file_rank": 3,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "mcp-security.md"
+          ],
+          "seconds": 0.04173364300004323
+        },
+        {
+          "id": 6,
+          "query": "Why is remote OAuth not implemented?",
+          "expected_file": "mcp-decisions.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-security.md",
+            "teaching-lab.md"
+          ],
+          "seconds": 0.04852074600000833
+        },
+        {
+          "id": 7,
+          "query": "What happens when the audit sink fails?",
+          "expected_file": "mcp-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mobility-operations.md",
+            "mcp-overview.md"
+          ],
+          "seconds": 0.04393338900001709
+        },
+        {
+          "id": 8,
+          "query": "How many actual stdio requests were evaluated?",
+          "expected_file": "mcp-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "mcp-overview.md"
+          ],
+          "seconds": 0.0435772469999165
+        },
+        {
+          "id": 9,
+          "query": "What is the source of the historical bike records?",
+          "expected_file": "mobility-overview.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "mobility-overview.md",
+            "mcp-overview.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.04539124600000832
+        },
+        {
+          "id": 10,
+          "query": "What does a missing database return over HTTP?",
+          "expected_file": "mobility-operations.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "mobility-operations.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.043423566999990726
+        },
+        {
+          "id": 11,
+          "query": "Why is shuffled evaluation different from time based evaluation?",
+          "expected_file": "teaching-lab.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "lakehouse-failures.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.04801472500003001
+        },
+        {
+          "id": 12,
+          "query": "How do target components leak rental counts?",
+          "expected_file": "teaching-lab.md",
+          "expected_file_rank": 1,
+          "retrieved_files": [
+            "teaching-lab.md",
+            "teaching-lab.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.04214703200000258
+        },
+        {
+          "id": 13,
+          "query": "How does dbt gate the Iceberg commit?",
+          "expected_file": "lakehouse-overview.md",
+          "expected_file_rank": 2,
+          "retrieved_files": [
+            "lakehouse-decisions.md",
+            "lakehouse-overview.md",
+            "lakehouse-overview.md"
+          ],
+          "seconds": 0.0412751589999516
+        },
+        {
+          "id": 14,
+          "query": "What are the limits of hash chained audit records?",
+          "expected_file": "mcp-security.md",
+          "expected_file_rank": null,
+          "retrieved_files": [
+            "mcp-overview.md",
+            "mcp-overview.md",
+            "mobility-overview.md"
+          ],
+          "seconds": 0.04783131900001081
+        }
+      ]
+    }
+  },
+  "extractive": {
+    "answered": 14,
+    "claims": 28,
+    "exact_cited_spans": 28,
+    "outputs": [
+      {
+        "query": "How is an operator approval tied to the exact proposal hash?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "Approval is an explicit local-operator decision bound to the proposal hash; the in-memory checkpoint is lost on restart, and local process owners are trusted.",
+            "citations": [
+              {
+                "chunk_id": "81955d82cb07df5b7613d2b20e79710bdba91957ae4985b9084b263f161088ab",
+                "document": "lakehouse-overview.md",
+                "document_sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4",
+                "text": "is distinct from deployment. It does **not** deploy a Glue compute job, Airflow service, identity-backed approval API, or a complete AWS lakehouse. AWS execution needs a selected account/region, scoped identity, spending limit, workload, failure/retry logs, and teardown evidence. No `apply` is run by CI. ## Limits and roadmap The graph is a deterministic tool workflow, not a learned planner benchmark. Approval is an explicit local-operator decision bound to the proposal hash; the in-memory checkpoint is lost on restart, and local process owners are trusted. It is not an authenticated multi-user approval service. Driver collection and full-table comparison are bounded to this historical dataset. Do not infer distributed throughput or production adoption. Next: durable approval identity/checkpoint storage, independent-source fault labels and seasonal drift calibration, then a separately approved AWS integration. First-release CI passed for the local integration, actual Airflow execution, Terraform validation and full-history scanner. AWS deployment remains pending. See [CHANGELOG](CHANGELOG.md)."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "Operator approval must match the proposal hash.",
+            "citations": [
+              {
+                "chunk_id": "d86db916bd537de745de356e74c0153dfc6e10b5a5dd401e2432c60bac139ae7",
+                "document": "lakehouse-decisions.md",
+                "document_sha256": "8bb687393a2e255966077e54f8ca8bbd30ed3476cb10a1f30e5f6e5af6a92537",
+                "text": "# Decisions and evidence boundaries 1. **Local catalog first.** SQLite-backed Iceberg and local Spark permit a real credential-free run. This verifies format/table behavior, not AWS S3/Glue integration. A cloud implementation needs different catalog/identity configuration. 2. **Typed, bounded actions.** The planner proposes only publish-valid-rows, investigate-drift, or block. Arbitrary SQL, shell execution and model-generated code are not action surfaces. Operator approval must match the proposal hash. The demonstration is deterministic and does not establish learned planning ability. 3. **Model tests before mutation.** Spark stages rows, dbt checks daily uniqueness/non-null/ranges/count reconciliation, then Iceberg commits. A failed model gate must leave the durable table untouched. The dbt candidate is temporary; analytics and catalog commits are not a distributed transaction. 4. **Honest replay.** Compare actual ordered Arrow table contents before skipping a commit. This costs a whole-table read; no streaming or large-scale efficiency claim is made. Multiple concurrent writers are not supported by this wrapper."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "Which plausible count inflation faults evade the checks?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "Dates, domains, uniqueness, and arithmetic remained plausible.",
+            "citations": [
+              {
+                "chunk_id": "62cfed98c08c4a5733cc595954c9fe5f152ba96fae35d2fb3f82e27a9d9fff3a",
+                "document": "lakehouse-failures.md",
+                "document_sha256": "046ce9399429fb1e7a23b903edc2656c50ec62525748ed59ea46d78e561c222a",
+                "text": "# Failure analysis **Observed miss:** in three seeded batches, 30 real rows per batch had both `casual` and `cnt` increased by 50. Dates, domains, uniqueness, and arithmetic remained plausible. The row detector missed all 90 altered rows. Across the full set of injected row faults this reduced recall to 0.80, while precision remained 1.00. These counts come from results/evaluation.json. **Why:** arithmetic consistency cannot prove a sensor/source observation is true. Adding a rule that merely recognizes this fixture would overfit the evaluator. A meaningful next step is an independently labeled source, robust seasonal residual monitoring, and evaluation of investigation burden. **False-alarm boundary:** there were zero alarms on three exact clean-source replays. This is a tiny and easy control set. A humidity threshold without seasonality may flag legitimate winter/summer changes; no low production false-positive rate is inferred. **Workflow misuse:** tests supply a rejection, a different proposal hash, an instruction string and a"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "D[Spark and dbt gate] D --> E[Local Iceberg snapshot] ``` Airflow separately orchestrates inspect \u2192 stage Spark Parquet \u2192 dbt checks \u2192 pending approval.",
+            "citations": [
+              {
+                "chunk_id": "6199e70c57aa4914f4fcdb01564253e5fa120b95a62a57eecd582f60c1774fc8",
+                "document": "lakehouse-overview.md",
+                "document_sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4",
+                "text": "D[Spark and dbt gate] D --> E[Local Iceberg snapshot] ``` Airflow separately orchestrates inspect \u2192 stage Spark Parquet \u2192 dbt checks \u2192 pending approval. It cannot grant approval or publish the final table. Its integration test is a real `dag.test()` run with an initialized metadata database, not just an import test. The real Airflow integration passed on GitHub\u2019s runner. Local execution in the authoring sandbox encountered a process-visibility error; the clean CI result verifies the DAG in its recorded environment. See [operations](docs/operations.md). ## Evals and the failure worth discussing The detector misses injected rental inflation when `casual + registered == cnt` still holds. Domain contracts detect contradictions, not observational truth. Humidity mean-shift alerts are also not seasonally adjusted. See the raw per-seed results and [failure analysis](docs/failure-analysis.md). ## Infrastructure boundary `infra/` defines encrypted, versioned S3 storage with public access blocked and TLS required, plus a Glue catalog database. Terraform formatting/provider validation"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "Why is this not a complete AWS deployment?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "It does **not** deploy a Glue compute job, Airflow service, identity-backed approval API, or a complete AWS lakehouse.",
+            "citations": [
+              {
+                "chunk_id": "81955d82cb07df5b7613d2b20e79710bdba91957ae4985b9084b263f161088ab",
+                "document": "lakehouse-overview.md",
+                "document_sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4",
+                "text": "is distinct from deployment. It does **not** deploy a Glue compute job, Airflow service, identity-backed approval API, or a complete AWS lakehouse. AWS execution needs a selected account/region, scoped identity, spending limit, workload, failure/retry logs, and teardown evidence. No `apply` is run by CI. ## Limits and roadmap The graph is a deterministic tool workflow, not a learned planner benchmark. Approval is an explicit local-operator decision bound to the proposal hash; the in-memory checkpoint is lost on restart, and local process owners are trusted. It is not an authenticated multi-user approval service. Driver collection and full-table comparison are bounded to this historical dataset. Do not infer distributed throughput or production adoption. Next: durable approval identity/checkpoint storage, independent-source fault labels and seasonal drift calibration, then a separately approved AWS integration. First-release CI passed for the local integration, actual Airflow execution, Terraform validation and full-history scanner. AWS deployment remains pending. See [CHANGELOG](CHANGELOG.md)."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "These measurements do not establish cloud deployment or production workload experience.",
+            "citations": [
+              {
+                "chunk_id": "297858511d9c958a9db7e555274d777f7fe7f27fbb63372071a31344913bc1b4",
+                "document": "mobility-overview.md",
+                "document_sha256": "ba3813dcea80d99f8cae66459358e8d31660ded95517197bcc07cea7bca39c1a",
+                "text": "# Mobility Quality Lab An auditable data pipeline, local analytics API, and evaluation study using real historical bike-rental observations. Source code in this project was implemented for this portfolio; the dataset and established algorithms are attributed, and no claim of worldwide novelty is made. ## Problem and scope For measured local replay and failure recovery, run `python workload.py` from this directory. See [recorded workload results](results/workload.json) and the [evidence and ownership completion guide](../../docs/profile-evidence-next-steps.md). These measurements do not establish cloud deployment or production workload experience. Reporting and prediction systems can produce plausible numbers even when inputs contain duplicates, inconsistent totals, or leakage. This project makes data contracts, rejected records, missing hours, and evaluation choices inspectable. It uses the complete downloaded UCI hourly dataset, not a toy sample. It is a local reference implementation, not a production service or station-level rebalancing system. ## One-command verification From the repository root, run `make run` (Python"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "How can I run the real Airflow integration?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "Its integration test is a real `dag.test()` run with an initialized metadata database, not just an import test.",
+            "citations": [
+              {
+                "chunk_id": "6199e70c57aa4914f4fcdb01564253e5fa120b95a62a57eecd582f60c1774fc8",
+                "document": "lakehouse-overview.md",
+                "document_sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4",
+                "text": "D[Spark and dbt gate] D --> E[Local Iceberg snapshot] ``` Airflow separately orchestrates inspect \u2192 stage Spark Parquet \u2192 dbt checks \u2192 pending approval. It cannot grant approval or publish the final table. Its integration test is a real `dag.test()` run with an initialized metadata database, not just an import test. The real Airflow integration passed on GitHub\u2019s runner. Local execution in the authoring sandbox encountered a process-visibility error; the clean CI result verifies the DAG in its recorded environment. See [operations](docs/operations.md). ## Evals and the failure worth discussing The detector misses injected rental inflation when `casual + registered == cnt` still holds. Domain contracts detect contradictions, not observational truth. Humidity mean-shift alerts are also not seasonally adjusted. See the raw per-seed results and [failure analysis](docs/failure-analysis.md). ## Infrastructure boundary `infra/` defines encrypted, versioned S3 storage with public access blocked and TLS required, plus a Glue catalog database. Terraform formatting/provider validation"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "Its CI integration uses the normal GitHub-hosted process environment; check that job before claiming a verified Airflow run.",
+            "citations": [
+              {
+                "chunk_id": "0c4888478d03b2f6e0b4b0182d07f887a787d6afa4dc815a13bce560fa4961ce",
+                "document": "lakehouse-failures.md",
+                "document_sha256": "046ce9399429fb1e7a23b903edc2656c50ec62525748ed59ea46d78e561c222a",
+                "text": "string-valued boolean. None reaches publication. These are local typed-boundary tests, not a prompt-injection benchmark against a language model. **Runtime failure:** Airflow's task supervisor could not consistently resolve its own PID through psutil in the authoring sandbox. No patch or fake success was substituted. Its CI integration uses the normal GitHub-hosted process environment; check that job before claiming a verified Airflow run."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "What prevents a caller from assigning an analyst role?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "Fourteen behavioral tests additionally check write/attach/raw-table denial, caller-supplied role escalation, strict types, inverted dates, injected catalog instructions, audit tampering, schema-rejection auditing, and audit-sink failure.",
+            "citations": [
+              {
+                "chunk_id": "1cd7577056bbea09c1038a921fe0bbd21f2fe358f2ac2c8997de70b5dc250a06",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "issued 16 tool requests across two real stdio sessions: all 13 expected denials were enforced, three allowed calls succeeded, and database bytes remained unchanged. Latency and SDK version are in the raw result; timing is local, includes validation/error handling and excludes subprocess startup from each request timer. There were no billed model/API calls. This is a small designed misuse suite, not an independent security audit or proof against all prompt injections. Fourteen behavioral tests additionally check write/attach/raw-table denial, caller-supplied role escalation, strict types, inverted dates, injected catalog instructions, audit tampering, schema-rejection auditing, and audit-sink failure. Tool annotations are only hints; enforcement comes from code and SQLite. ## Failure story and limits A catalog description can contain \u201cignore restrictions\u201d text. The server faithfully returns that untrusted data, but it cannot alter the host-assigned role. An incautious consuming agent could still repeat those instructions or misuse other tools outside this server. This"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "## Controls that execute - The host fixes `catalog` or `analyst` at process launch; tool arguments cannot assign or escalate a role.",
+            "citations": [
+              {
+                "chunk_id": "45494f76717f8930baac9dde34e9192e26ac128c79256768945211c775ae5e41",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "# Catalog Sentinel A read-only MCP catalog server with host-assigned permissions, strict tool inputs, an audit hash chain, and actual stdio client/server misuse evaluations. [![Verification](https://github.com/Sunnyvulli/catalog-sentinel/actions/workflows/verify.yml/badge.svg)](https://github.com/Sunnyvulli/catalog-sentinel/actions/workflows/verify.yml) **Evidence:** [actual protocol run](results/demo.json) \u00b7 [threat model](docs/security.md) \u00b7 [design decisions](docs/decisions.md). Uses attributed UCI Bike Sharing aggregates, not private company data. Local reference implementation, not an internet-facing authenticated service. ## Quick start Python 3.12 and GNU Make are the tested prerequisites. ```sh python3 -m venv .venv . .venv/bin/activate pip install -r requirements.txt make run ``` This builds a temporary database from bundled, hash-verified historical observations and launches actual MCP stdio subprocesses. It checks allowed/denied requests for both roles and confirms database bytes are unchanged. `make test` covers additional misuse and audit behavior. No model, credential or paid endpoint is needed. ## Controls that execute - The host fixes `catalog` or `analyst` at process launch; tool arguments cannot assign or escalate a role. - Exactly two tools:"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "Why is remote OAuth not implemented?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "`stdio` trusts the launching OS user and is not remote OAuth.",
+            "citations": [
+              {
+                "chunk_id": "26504a8b44cc01008dafb9b8814e27abca11fed9ee09e53ea7d06ce2639a1481",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "project isolates a capability boundary; it does not solve model-level instruction following. `stdio` trusts the launching OS user and is not remote OAuth. Each server instance needs a distinct audit path; cross-process file coordination and external immutable audit anchoring are not implemented. Do not expose this as an unauthenticated HTTP service. Source and database files are owner-managed; hash checking is not adversarial storage protection. [Security model](docs/security.md). ## Operator use To build a persistent demo snapshot: `python -c \"from sentinel.store import build; print(build('.local/catalog.sqlite'))\"`. Then configure an MCP host to run `python -m sentinel.server --database /absolute/path/.local/catalog.sqlite --audit /absolute/path/.local/audit.jsonl --role catalog` from this repository. The host owns the role and paths; clients cannot supply them through tools. ## Attribution, maintenance and next step UCI Bike Sharing, CC BY 4.0; [source and hashes](data/SOURCE.md). The bundled gzip wraps unchanged source bytes, checked before loading. MIT code license. No production adoption or learned-model attack result is"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "One process owns one log; multi-process append coordination is not implemented.",
+            "citations": [
+              {
+                "chunk_id": "8820769e830d23137350124e6e1c81ca8bab6b6373c3381511a6fdead7e70225",
+                "document": "mcp-security.md",
+                "document_sha256": "1a1d8db6a007e405d42ec9ac87aad04d3805fc0f89ecdca331f0375058e31a6e",
+                "text": "and lookup. Tool/schema failures are retained, argument values are hashed, and the response is withheld if the audit append fails. Hash chaining detects edits in retained entries, but without an external checkpoint cannot prove completeness or prevent full-chain replacement/truncation. One process owns one log; multi-process append coordination is not implemented. No HTTP server, remote identity verification, token passthrough or third-party API exists. Remote deployment needs a separate authorization design; do not substitute client-supplied role metadata for identity. Primary references: [official MCP SDK](https://py.sdk.modelcontextprotocol.io/), [MCP security practices](https://modelcontextprotocol.io/specification/2026-07-28/basic/security_best_practices), [SQLite authorizer](https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.set_authorizer). Consulted 2026-10-19; no tutorial implementation copied."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "What happens when the audit sink fails?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "Arguments are hashed instead of copied into the audit.",
+            "citations": [
+              {
+                "chunk_id": "2a434309c4a81c8339db21dd7823fb979857f53c3b84fd4ef4d3d3a49f5e4bf5",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "describe one allowlisted dataset, or read at most 31 dates of daily aggregates. No arbitrary SQL, file access, shell, URL fetch, credential, or raw-observation tool exists. - MCP input schemas validate literal dataset names and strict bounded integer limits; date ranges are checked by the handler. - SQLite opens with `mode=ro`, query-only mode, disabled extension loading, an authorizer limited to catalog/daily reads, and an opcode budget. - Middleware audits requests around SDK validation/lookup, including invalid tool/schema attempts. Arguments are hashed instead of copied into the audit. Sink failure withholds results. - Per-process locking, flushing and fsync protect application appends; hash chaining detects edited retained entries. OS-owner rewriting/truncation is outside this guarantee. ## Architecture ```mermaid flowchart TD A[Trusted stdio host and fixed role] --> B[MCP schema and audit middleware] B --> C[Allowlisted read-only handlers] C --> D[SQLite query-only connection] B --> E[Hashed-argument audit chain] ``` ## Measured evidence The recorded run"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "The API opens SQLite explicitly read-only and returns 503 without creating a database file when its snapshot is unavailable.",
+            "citations": [
+              {
+                "chunk_id": "2ad76cded34b26eb072542bad482da515417f4d5f15c2e901527fb644b896c56",
+                "document": "mobility-operations.md",
+                "document_sha256": "257558e7022f5bee282feae8c12f96c87c8c3c6d1469ab9a3f4b476ef8ade021",
+                "text": "snapshot; it is not a live ingestion service. The API opens SQLite explicitly read-only and returns 503 without creating a database file when its snapshot is unavailable."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "How many actual stdio requests were evaluated?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "# Catalog Sentinel A read-only MCP catalog server with host-assigned permissions, strict tool inputs, an audit hash chain, and actual stdio client/server misuse evaluations.",
+            "citations": [
+              {
+                "chunk_id": "45494f76717f8930baac9dde34e9192e26ac128c79256768945211c775ae5e41",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "# Catalog Sentinel A read-only MCP catalog server with host-assigned permissions, strict tool inputs, an audit hash chain, and actual stdio client/server misuse evaluations. [![Verification](https://github.com/Sunnyvulli/catalog-sentinel/actions/workflows/verify.yml/badge.svg)](https://github.com/Sunnyvulli/catalog-sentinel/actions/workflows/verify.yml) **Evidence:** [actual protocol run](results/demo.json) \u00b7 [threat model](docs/security.md) \u00b7 [design decisions](docs/decisions.md). Uses attributed UCI Bike Sharing aggregates, not private company data. Local reference implementation, not an internet-facing authenticated service. ## Quick start Python 3.12 and GNU Make are the tested prerequisites. ```sh python3 -m venv .venv . .venv/bin/activate pip install -r requirements.txt make run ``` This builds a temporary database from bundled, hash-verified historical observations and launches actual MCP stdio subprocesses. It checks allowed/denied requests for both roles and confirms database bytes are unchanged. `make test` covers additional misuse and audit behavior. No model, credential or paid endpoint is needed. ## Controls that execute - The host fixes `catalog` or `analyst` at process launch; tool arguments cannot assign or escalate a role. - Exactly two tools:"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "issued 16 tool requests across two real stdio sessions: all 13 expected denials were enforced, three allowed calls succeeded, and database bytes remained unchanged.",
+            "citations": [
+              {
+                "chunk_id": "1cd7577056bbea09c1038a921fe0bbd21f2fe358f2ac2c8997de70b5dc250a06",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "issued 16 tool requests across two real stdio sessions: all 13 expected denials were enforced, three allowed calls succeeded, and database bytes remained unchanged. Latency and SDK version are in the raw result; timing is local, includes validation/error handling and excludes subprocess startup from each request timer. There were no billed model/API calls. This is a small designed misuse suite, not an independent security audit or proof against all prompt injections. Fourteen behavioral tests additionally check write/attach/raw-table denial, caller-supplied role escalation, strict types, inverted dates, injected catalog instructions, audit tampering, schema-rejection auditing, and audit-sink failure. Tool annotations are only hints; enforcement comes from code and SQLite. ## Failure story and limits A catalog description can contain \u201cignore restrictions\u201d text. The server faithfully returns that untrusted data, but it cannot alter the host-assigned role. An incautious consuming agent could still repeat those instructions or misuse other tools outside this server. This"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "What is the source of the historical bike records?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "# Mobility Quality Lab An auditable data pipeline, local analytics API, and evaluation study using real historical bike-rental observations.",
+            "citations": [
+              {
+                "chunk_id": "297858511d9c958a9db7e555274d777f7fe7f27fbb63372071a31344913bc1b4",
+                "document": "mobility-overview.md",
+                "document_sha256": "ba3813dcea80d99f8cae66459358e8d31660ded95517197bcc07cea7bca39c1a",
+                "text": "# Mobility Quality Lab An auditable data pipeline, local analytics API, and evaluation study using real historical bike-rental observations. Source code in this project was implemented for this portfolio; the dataset and established algorithms are attributed, and no claim of worldwide novelty is made. ## Problem and scope For measured local replay and failure recovery, run `python workload.py` from this directory. See [recorded workload results](results/workload.json) and the [evidence and ownership completion guide](../../docs/profile-evidence-next-steps.md). These measurements do not establish cloud deployment or production workload experience. Reporting and prediction systems can produce plausible numbers even when inputs contain duplicates, inconsistent totals, or leakage. This project makes data contracts, rejected records, missing hours, and evaluation choices inspectable. It uses the complete downloaded UCI hourly dataset, not a toy sample. It is a local reference implementation, not a production service or station-level rebalancing system. ## One-command verification From the repository root, run `make run` (Python"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "## Attribution, maintenance and next step UCI Bike Sharing, CC BY 4.0; [source and hashes](data/SOURCE.md).",
+            "citations": [
+              {
+                "chunk_id": "26504a8b44cc01008dafb9b8814e27abca11fed9ee09e53ea7d06ce2639a1481",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "project isolates a capability boundary; it does not solve model-level instruction following. `stdio` trusts the launching OS user and is not remote OAuth. Each server instance needs a distinct audit path; cross-process file coordination and external immutable audit anchoring are not implemented. Do not expose this as an unauthenticated HTTP service. Source and database files are owner-managed; hash checking is not adversarial storage protection. [Security model](docs/security.md). ## Operator use To build a persistent demo snapshot: `python -c \"from sentinel.store import build; print(build('.local/catalog.sqlite'))\"`. Then configure an MCP host to run `python -m sentinel.server --database /absolute/path/.local/catalog.sqlite --audit /absolute/path/.local/audit.jsonl --role catalog` from this repository. The host owns the role and paths; clients cannot supply them through tools. ## Attribution, maintenance and next step UCI Bike Sharing, CC BY 4.0; [source and hashes](data/SOURCE.md). The bundled gzip wraps unchanged source bytes, checked before loading. MIT code license. No production adoption or learned-model attack result is"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "What does a missing database return over HTTP?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "## Extension Write a test showing that an invalid-schema batch preserves the previous database.",
+            "citations": [
+              {
+                "chunk_id": "ba42596691eacab849b2448a03518b7a8b8fc3d73d177f044b59a022c1678cf2",
+                "document": "teaching-lab.md",
+                "document_sha256": "a9c426eb060ba77c3a90d0c1fb6faaeb14506c329be35b3e5577601e0c64898d",
+                "text": "the split comparison. Observed same-hour weather would not be known exactly before that hour. Total: 15 points. Award evaluation points for (a) leakage identity 2, (b) confounding/distribution caveat 2, (c) forecasting distinction 1. Partial credit requires a correct explanation, not just reproducing an output. ## Extension Write a test showing that an invalid-schema batch preserves the previous database. Design, but do not claim to have deployed, a notification policy for a failed batch. Explain what evidence would be necessary to judge its usefulness."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "# Local operator guide ## Ingest Run pipeline.py with --input, --database and --output paths.",
+            "citations": [
+              {
+                "chunk_id": "d78e9da2fa78d08482e50712cae4f1a71fa187864a358fb974674b92e854a099",
+                "document": "mobility-operations.md",
+                "document_sha256": "257558e7022f5bee282feae8c12f96c87c8c3c6d1469ab9a3f4b476ef8ade021",
+                "text": "# Local operator guide ## Ingest Run pipeline.py with --input, --database and --output paths. Preserve raw CSV and its SHA-256. Review accepted/rejected counts and reason codes before consuming aggregates. The clean source has missing hours; never assume 24 rows per day. ## Failure recovery - Schema mismatch or empty valid set: existing data remain intact; inspect upstream format before retrying. - SQLite lock: stop the competing writer and retry the same source. Do not delete the database to resolve a lock. - JSON export failure: correct output permissions/path and rerun; the audit remains in batch_manifest. - API 503: run the pipeline against the API's database path, then retry health. - Unexpected results with a cached hash: rerun the known attributed input. Replay now compares all observation fields and transactionally reloads modified, missing, or extra observations. Investigate the cause; schema and audit metadata remain trusted, so arbitrary hostile edits require rebuilding"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "Why is shuffled evaluation different from time based evaluation?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "Explain why the shuffled and chronological results cannot be interpreted as a controlled causal comparison.",
+            "citations": [
+              {
+                "chunk_id": "10a8ee78c6fa51838e27143934a2786bd57b8daaf972579591f414cc1296ffcd",
+                "document": "teaching-lab.md",
+                "document_sha256": "a9c426eb060ba77c3a90d0c1fb6faaeb14506c329be35b3e5577601e0c64898d",
+                "text": "be available as predictors when estimating the same hour's cnt? Explain why the shuffled and chronological results cannot be interpreted as a controlled causal comparison. Distinguish retrospective estimation using observed weather from forecasting future demand. (5 points) ## Answer key and rubric 1. An incorrect non-negative total can still disagree with components; reconciliation enforces a domain relationship. 2. The SHA-256 plus active-snapshot manifest recognizes a repeat of the same batch; replacement is transactional rather than append-only. 3. The hour 25 violates the 0\u201323 range; a repeated valid key/ID violates uniqueness. Full credit requires checking the actual reason codes and avoiding edits to original input. 4. The immutable record ID still triggers duplicate_key. Domain rules and relational rules protect different invariants. 5. A plausible numeric value can shift aggregates or predictions silently. 6. casual + registered equals the target, so using them leaks the answer. Different time periods and distributions confound"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "These counts come from results/evaluation.json.",
+            "citations": [
+              {
+                "chunk_id": "62cfed98c08c4a5733cc595954c9fe5f152ba96fae35d2fb3f82e27a9d9fff3a",
+                "document": "lakehouse-failures.md",
+                "document_sha256": "046ce9399429fb1e7a23b903edc2656c50ec62525748ed59ea46d78e561c222a",
+                "text": "# Failure analysis **Observed miss:** in three seeded batches, 30 real rows per batch had both `casual` and `cnt` increased by 50. Dates, domains, uniqueness, and arithmetic remained plausible. The row detector missed all 90 altered rows. Across the full set of injected row faults this reduced recall to 0.80, while precision remained 1.00. These counts come from results/evaluation.json. **Why:** arithmetic consistency cannot prove a sensor/source observation is true. Adding a rule that merely recognizes this fixture would overfit the evaluator. A meaningful next step is an independently labeled source, robust seasonal residual monitoring, and evaluation of investigation burden. **False-alarm boundary:** there were zero alarms on three exact clean-source replays. This is a tiny and easy control set. A humidity threshold without seasonality may flag legitimate winter/summer changes; no low production false-positive rate is inferred. **Workflow misuse:** tests supply a rejection, a different proposal hash, an instruction string and a"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "How do target components leak rental counts?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "An incorrect non-negative total can still disagree with components; reconciliation enforces a domain relationship.",
+            "citations": [
+              {
+                "chunk_id": "10a8ee78c6fa51838e27143934a2786bd57b8daaf972579591f414cc1296ffcd",
+                "document": "teaching-lab.md",
+                "document_sha256": "a9c426eb060ba77c3a90d0c1fb6faaeb14506c329be35b3e5577601e0c64898d",
+                "text": "be available as predictors when estimating the same hour's cnt? Explain why the shuffled and chronological results cannot be interpreted as a controlled causal comparison. Distinguish retrospective estimation using observed weather from forecasting future demand. (5 points) ## Answer key and rubric 1. An incorrect non-negative total can still disagree with components; reconciliation enforces a domain relationship. 2. The SHA-256 plus active-snapshot manifest recognizes a repeat of the same batch; replacement is transactional rather than append-only. 3. The hour 25 violates the 0\u201323 range; a repeated valid key/ID violates uniqueness. Full credit requires checking the actual reason codes and avoiding edits to original input. 4. The immutable record ID still triggers duplicate_key. Domain rules and relational rules protect different invariants. 5. A plausible numeric value can shift aggregates or predictions silently. 6. casual + registered equals the target, so using them leaks the answer. Different time periods and distributions confound"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "## Learning outcomes By the end, learners should distinguish missing observations from zeros; reconcile aggregate counts; implement a repeat-safe batch; and recognize target leakage.",
+            "citations": [
+              {
+                "chunk_id": "269012722518d0193b1229fb460b4b541ff9b58b3b6c52dd3aac75a0ddb36e7f",
+                "document": "teaching-lab.md",
+                "document_sha256": "a9c426eb060ba77c3a90d0c1fb6faaeb14506c329be35b3e5577601e0c64898d",
+                "text": "# Lab: reliable analytics from real observations **Audience:** introductory SQL/Python learners. **Duration:** 60\u201390 minutes. **Prerequisites:** Python functions, basic SELECT/GROUP BY. This is a teaching sample, not a claim of prior teaching employment. ## Learning outcomes By the end, learners should distinguish missing observations from zeros; reconcile aggregate counts; implement a repeat-safe batch; and recognize target leakage. ## 1. Prepare (10 minutes) Clone the repository. In projects/mobility-quality run python pipeline.py and python -m unittest -v. Inspect data/SOURCE.md to identify the source, license, measurement period, and hash. Explain why real historical data are different from live operational evidence. ## 2. Inspect (15 minutes) Run these SQLite queries using Python's sqlite3 module or your preferred SQLite client: ```sql SELECT COUNT(*) AS rows, SUM(cnt) AS rentals FROM observations; SELECT dteday, COUNT(*) AS hours, SUM(cnt) AS rentals FROM observations GROUP BY dteday HAVING COUNT(*) < 24 ORDER BY dteday; SELECT COUNT(*) AS mismatches FROM observations"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "How does dbt gate the Iceberg commit?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "**Model tests before mutation.** Spark stages rows, dbt checks daily uniqueness/non-null/ranges/count reconciliation, then Iceberg commits.",
+            "citations": [
+              {
+                "chunk_id": "d86db916bd537de745de356e74c0153dfc6e10b5a5dd401e2432c60bac139ae7",
+                "document": "lakehouse-decisions.md",
+                "document_sha256": "8bb687393a2e255966077e54f8ca8bbd30ed3476cb10a1f30e5f6e5af6a92537",
+                "text": "# Decisions and evidence boundaries 1. **Local catalog first.** SQLite-backed Iceberg and local Spark permit a real credential-free run. This verifies format/table behavior, not AWS S3/Glue integration. A cloud implementation needs different catalog/identity configuration. 2. **Typed, bounded actions.** The planner proposes only publish-valid-rows, investigate-drift, or block. Arbitrary SQL, shell execution and model-generated code are not action surfaces. Operator approval must match the proposal hash. The demonstration is deterministic and does not establish learned planning ability. 3. **Model tests before mutation.** Spark stages rows, dbt checks daily uniqueness/non-null/ranges/count reconciliation, then Iceberg commits. A failed model gate must leave the durable table untouched. The dbt candidate is temporary; analytics and catalog commits are not a distributed transaction. 4. **Honest replay.** Compare actual ordered Arrow table contents before skipping a commit. This costs a whole-table read; no streaming or large-scale efficiency claim is made. Multiple concurrent writers are not supported by this wrapper."
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "It executes an actual LangGraph interrupt/resume, Spark transformation, five dbt checks, and an Iceberg commit.",
+            "citations": [
+              {
+                "chunk_id": "3d193677d1566563f69036f90344eb6ada7fff2dae26c107b4b1aedf9fd5c1a4",
+                "document": "lakehouse-overview.md",
+                "document_sha256": "0d8cf0ddfea6edb6f6794c732aacc3509ade7dae5aabb9d9052154e8ec0676c4",
+                "text": "# Lakehouse Guardian A local Spark/Iceberg data-quality workflow with dbt checks, LangGraph approval gates, and measured fault-injection evaluations on UCI Bike Sharing data. [![Verification](https://github.com/Sunnyvulli/lakehouse-guardian/actions/workflows/verify.yml/badge.svg)](https://github.com/Sunnyvulli/lakehouse-guardian/actions/workflows/verify.yml) **Inspect in 60 seconds:** [recorded run](results/demo.json) \u00b7 [fault evaluation](results/evaluation.json) \u00b7 [failure analysis](docs/failure-analysis.md) \u00b7 [decisions](docs/decisions.md). This is a local reference system; AWS resources have not been applied. ## Quick start Python 3.12, Java 17, and GNU Make on Linux are the tested prerequisites. The first installation downloads Spark and scientific packages; no five-minute clean-OS promise is made. ```sh python3 -m venv .venv . .venv/bin/activate pip install -r requirements.txt make run ``` `make run` explicitly approves publication of the bundled, attributed local fixture. It executes an actual LangGraph interrupt/resume, Spark transformation, five dbt checks, and an Iceberg commit. It does not approve any cloud change. Run `python -m guardian.demo` without the approval flag to inspect the interrupted proposal with no publication. `make test eval` runs the behavioral tests"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      },
+      {
+        "query": "What are the limits of hash chained audit records?",
+        "method": "hybrid",
+        "corpus_sha256": "a5d0386910af277ef4defd68aa13af71d3c1ca8f1512f1f63b1ee9376b2c02cf",
+        "abstained": false,
+        "claims": [
+          {
+            "text": "- MCP input schemas validate literal dataset names and strict bounded integer limits; date ranges are checked by the handler.",
+            "citations": [
+              {
+                "chunk_id": "2a434309c4a81c8339db21dd7823fb979857f53c3b84fd4ef4d3d3a49f5e4bf5",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "describe one allowlisted dataset, or read at most 31 dates of daily aggregates. No arbitrary SQL, file access, shell, URL fetch, credential, or raw-observation tool exists. - MCP input schemas validate literal dataset names and strict bounded integer limits; date ranges are checked by the handler. - SQLite opens with `mode=ro`, query-only mode, disabled extension loading, an authorizer limited to catalog/daily reads, and an opcode budget. - Middleware audits requests around SDK validation/lookup, including invalid tool/schema attempts. Arguments are hashed instead of copied into the audit. Sink failure withholds results. - Per-process locking, flushing and fsync protect application appends; hash chaining detects edited retained entries. OS-owner rewriting/truncation is outside this guarantee. ## Architecture ```mermaid flowchart TD A[Trusted stdio host and fixed role] --> B[MCP schema and audit middleware] B --> C[Allowlisted read-only handlers] C --> D[SQLite query-only connection] B --> E[Hashed-argument audit chain] ``` ## Measured evidence The recorded run"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          },
+          {
+            "text": "This is a small designed misuse suite, not an independent security audit or proof against all prompt injections.",
+            "citations": [
+              {
+                "chunk_id": "1cd7577056bbea09c1038a921fe0bbd21f2fe358f2ac2c8997de70b5dc250a06",
+                "document": "mcp-overview.md",
+                "document_sha256": "a9d94ff3ee0ad3d061333798dda3aae802287345a663cf9d6239d06032c801d6",
+                "text": "issued 16 tool requests across two real stdio sessions: all 13 expected denials were enforced, three allowed calls succeeded, and database bytes remained unchanged. Latency and SDK version are in the raw result; timing is local, includes validation/error handling and excludes subprocess startup from each request timer. There were no billed model/API calls. This is a small designed misuse suite, not an independent security audit or proof against all prompt injections. Fourteen behavioral tests additionally check write/attach/raw-table denial, caller-supplied role escalation, strict types, inverted dates, injected catalog instructions, audit tampering, schema-rejection auditing, and audit-sink failure. Tool annotations are only hints; enforcement comes from code and SQLite. ## Failure story and limits A catalog description can contain \u201cignore restrictions\u201d text. The server faithfully returns that untrusted data, but it cannot alter the host-assigned role. An incautious consuming agent could still repeat those instructions or misuse other tools outside this server. This"
+              }
+            ],
+            "triage": {
+              "risk": 0.0,
+              "review_required": false,
+              "warning": "Lexical triage can miss contradictions and semantic changes."
+            }
+          }
+        ],
+        "warning": "Extractive spans demonstrate citation provenance, not independent factual accuracy."
+      }
+    ],
+    "limit": "Span identity is true by construction and is not a factual-faithfulness benchmark."
+  },
+  "guard": {
+    "unsupported": 5,
+    "flagged_unsupported": 3,
+    "recall": 0.6,
+    "control_false_alarms": 0,
+    "controls": 1,
+    "cases": [
+      {
+        "case": "exact_control",
+        "unsupported": false,
+        "claim": "The local workflow requires approval before publication.",
+        "sources": [
+          "The local workflow requires approval before publication."
+        ],
+        "risk": 0.0,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      },
+      {
+        "case": "missing_citation",
+        "unsupported": true,
+        "claim": "The local workflow requires approval before publication.",
+        "sources": [],
+        "risk": 1.0,
+        "review_required": true,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      },
+      {
+        "case": "unmatched_number",
+        "unsupported": true,
+        "claim": "There are 20000 observations.",
+        "sources": [
+          "There are 17379 observations."
+        ],
+        "risk": 1.0,
+        "review_required": true,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      },
+      {
+        "case": "unrelated",
+        "unsupported": true,
+        "claim": "Satellites measure ocean currents.",
+        "sources": [
+          "The local workflow requires approval before publication."
+        ],
+        "risk": 1.0,
+        "review_required": true,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      },
+      {
+        "case": "negation_miss",
+        "unsupported": true,
+        "claim": "The local workflow does not require approval before publication.",
+        "sources": [
+          "The local workflow requires approval before publication."
+        ],
+        "risk": 0.375,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      },
+      {
+        "case": "meaning_miss",
+        "unsupported": true,
+        "claim": "The local workflow guarantees complete factual correctness.",
+        "sources": [
+          "The local workflow cannot guarantee complete factual correctness."
+        ],
+        "risk": 0.16666666666666663,
+        "review_required": false,
+        "warning": "Lexical triage can miss contradictions and semantic changes."
+      }
+    ]
+  },
+  "latency_seconds": {
+    "median_retrieval": 0.03985432600001104,
+    "p95_retrieval": 0.04783131900001081,
+    "scope": "Local in-process retrieval including vectorizer refit; excludes dependency installation and HTTP transport."
+  },
+  "billed_model_api_cost_usd": 0,
+  "cpu_cost_usd": null,
+  "limits": [
+    "One small owner-authored corpus and 14 owner-authored queries, not external validation.",
+    "One expected file per query; other retrieved files may also be relevant.",
+    "Character TF-IDF is lexical matching, not semantic vector retrieval.",
+    "RRF is an established algorithm and need not outperform the best individual baseline.",
+    "The guard misses negation/semantic changes despite high token overlap.",
+    "No paid model, free-form answer quality, production throughput or model-level prompt-injection result."
+  ]
+}

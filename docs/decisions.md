@@ -16,3 +16,7 @@ Return up to two relevant sentences with chunk ID, source hash and exact support
 
 ## 5. Loopback service and bounded HTTP contract
 Only health and read-only query operations are exposed on loopback. Indexing is a separate CLI operator action. Validate query length, method, strict k and body size, open SQLite read-only, and retain only query hashes in monitoring. A monitor failure returns 503 instead of silently losing the event. This is local development isolation, not remote identity, immutable auditing, service-rate limiting or production authentication. No public backend deployment is claimed.
+
+
+## 6. Question-specific extraction after a real review failure
+Unweighted token overlap selected generic audit metadata for an audit-sink-failure question. Replace it with `sum(log(1 + sentence_count / (1 + term_sentence_frequency))) / sqrt(sentence_content_token_count)` over matching question terms; ignore a fixed question-cue set. Choose the best sentence in each retrieved chunk, rank those candidates, retain up to two unique extracts at least 0.6 times the best score, and retain the original chunk-similarity floor. This favors specific concise explanations but remains lexical and can miss relevant paraphrases. Two exact regression cases fail before and pass after the fix. The query set is a development set that informed this change, not an untouched test set or independently labeled answer benchmark. Original and revised outputs are retained.
