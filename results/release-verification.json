@@ -1,0 +1,18 @@
+{
+  "verified_on": "2026-10-19",
+  "source_commit": "c875250c7de08cc300341a6d35f2cb3f878e3173",
+  "scope": "Executed main CI verified before v0.1.0 release preparation; code and raw metrics are unchanged by packaging.",
+  "checks": [
+    {
+      "name": "retrieval-and-service",
+      "conclusion": "success",
+      "url": "https://github.com/Sunnyvulli/evidence-ledger-rag/actions/runs/39305677934/job/118241997439"
+    },
+    {
+      "name": "secrets",
+      "conclusion": "success",
+      "url": "https://github.com/Sunnyvulli/evidence-ledger-rag/actions/runs/39305677934/job/118241996692"
+    }
+  ],
+  "release_status": "Version content prepared; GitHub release/tag is authoritative for publication."
+}

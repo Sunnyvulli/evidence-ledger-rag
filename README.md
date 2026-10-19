@@ -4,7 +4,7 @@ An incremental documentation-retrieval service with hybrid lexical search, exact
 
 [![Verification](https://github.com/Sunnyvulli/evidence-ledger-rag/actions/workflows/verify.yml/badge.svg)](https://github.com/Sunnyvulli/evidence-ledger-rag/actions/workflows/verify.yml)
 
-**Inspect:** [recorded-results explorer](index.html) · [raw evaluation](results/evaluation.json) · [failure analysis](docs/failure-analysis.md) · [decisions](docs/decisions.md). This reference system assembles extractive answers; it does not evaluate free-form model generation. The browser explorer displays recorded results, not a live backend.
+**Inspect:** [recorded-results explorer](https://sunnyvulli.github.io/evidence-ledger-rag/) · [raw evaluation](results/evaluation.json) · [failure analysis](docs/failure-analysis.md) · [decisions](docs/decisions.md). This reference system assembles extractive answers; it does not evaluate free-form model generation. The browser explorer displays recorded results, not a live backend.
 
 ## Why this exists
 
@@ -78,7 +78,7 @@ This was development-set tuning after inspecting an output. Retrieval ranks and 
 
 ## Maintenance and next milestone
 
-Add independently authored relevance/unsupported-answer labels, paraphrase and contradiction cases, and an independently evaluated semantic or generative component before broader research claims. Persist fitted indexes for larger corpora; add authenticated deployment and concurrency/load evidence before public-service use. See [CHANGELOG](CHANGELOG.md), [CONTRIBUTING](CONTRIBUTING.md), and [operations](docs/operations.md). The initial version remains a release candidate until its CI/release milestone is recorded.
+Add independently authored relevance/unsupported-answer labels, paraphrase and contradiction cases, and an independently evaluated semantic or generative component before broader research claims. Persist fitted indexes for larger corpora; add authenticated deployment and concurrency/load evidence before public-service use. See [CHANGELOG](CHANGELOG.md), [CONTRIBUTING](CONTRIBUTING.md), and [operations](docs/operations.md). This version packages the executed local reference system and its documented extraction correction.
 
 ## Attribution
 
