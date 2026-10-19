@@ -29,7 +29,7 @@ curl -s http://127.0.0.1:8090/query -H 'Content-Type: application/json' \
   -d '{"query":"How is approval bound to a proposal?","k":3,"method":"hybrid"}'
 ```
 
-`make test` executes 16 behavioral tests, including real HTTP requests, failed indexing rollback/retry, unchanged database bytes, missing-index behavior and monitor-sink failure. `python -m ledger.cli ingest --corpus knowledge` is an explicit operator action; HTTP cannot mutate the index. No clean-OS five-minute promise is made.
+`make test` executes 18 behavioral tests, including real HTTP requests, failed indexing rollback/retry, unchanged database bytes, missing-index behavior and monitor-sink failure. `python -m ledger.cli ingest --corpus knowledge` is an explicit operator action; HTTP cannot mutate the index. No clean-OS five-minute promise is made.
 
 ## Recorded highlights
 
@@ -43,9 +43,9 @@ On 10 snapshotted owner-authored documents (34 chunks), with 14 authored queries
 
 The hybrid has the same hit count as character retrieval and does not establish a general improvement. Three queries miss their expected file. Other returned files may also be relevant; this is a small author-labeled development set, not independent retrieval validation.
 
-All 14 queries produced extracts: 28 of 28 claim strings are exact cited spans **by construction**, not independent factual faithfulness. In six controlled support-guard probes, only 3/5 unsupported claims were flagged (recall 0.60); the one matched supported control was not flagged. Two semantic/negation changes were missed. This guard signals review; it does not certify truth.
+All 14 queries produced extracts: 26 of 26 claim strings are exact cited spans **by construction**, not independent factual faithfulness. In six controlled support-guard probes, only 3/5 unsupported claims were flagged (recall 0.60); the one matched supported control was not flagged. Two semantic/negation changes were missed. This guard signals review; it does not certify truth.
 
-Recorded median retrieval time was about 40 ms and p95 about 48 ms on the authoring host, including refitting character TF-IDF and excluding HTTP transport/install. Raw timings, package versions, corpus/query hashes and outputs are retained. No paid model call occurs; CPU cost is unmeasured, not free. There is no seed-dependent model fitting in this deterministic pipeline.
+Recorded median retrieval time was about 43 ms and p95 about 47 ms on the authoring host, including refitting character TF-IDF and excluding HTTP transport/install. Raw timings, package versions, corpus/query hashes and outputs are retained. No paid model call occurs; CPU cost is unmeasured, not free. There is no seed-dependent model fitting in this deterministic pipeline.
 
 ## Architecture
 
@@ -60,6 +60,12 @@ flowchart TD
 ```
 
 The character matcher is **lexical**, not a semantic embedding service. The support signal adapts the owner's existing deterministic research baseline; it does not import its learned classifier or inherit its 900-answer external-validation result. [Guard provenance](docs/guard-provenance.md).
+
+## A verified iteration
+
+Browser QA found that the audit-sink-failure question returned a generic audit-storage sentence. Sentence selection now weights question terms by their rarity across corpus sentences, normalizes for sentence length, examines all retrieved chunks, and drops weak secondary extracts. Two regression tests failed before the fix and pass after it, including the actual corpus/question. The first extract now states: “Sink failure withholds results.” [Before/after record](results/extraction-iteration.json) · [initial run](results/initial-evaluation.json).
+
+This was development-set tuning after inspecting an output. Retrieval ranks and guard failures are unchanged; no independent answer-quality improvement is claimed.
 
 ## Engineering boundaries
 

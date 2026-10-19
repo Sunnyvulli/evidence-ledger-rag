@@ -13,3 +13,9 @@ A document saying to ignore restrictions can be indexed and quoted. The engine h
 
 ## Durable failure behavior
 Injected chunk-insert failure rolls back changed documents/search content/signature; retry after removing the injected failure succeeds. Invalid UTF-8, oversized files, empty corpus and symlinks fail before content mutation. A missing query index returns 503 and is not created. An unavailable monitor sink also returns 503. These are controlled local tests; there is no production incident history or cloud-recovery claim.
+
+
+## Exact citation, unresponsive extract: observed and fixed locally
+Deployed browser inspection of “What happens when the audit sink fails?” originally returned “Arguments are hashed instead of copied into the audit” and a missing-database explanation. Both were exact spans, but neither answered this question. The updated rarity/length-weighted sentence selector now returns “Sink failure withholds results” first. The fixture and actual-corpus regressions both failed before this change and pass after it. See the retained before/after outputs.
+
+This does not turn citation identity into factual faithfulness. The inspected query informed the heuristic, no independent answer-relevance labels exist, and retrieval still misses three expected files. The unsupported-claim guard still misses both meaning/negation probes.
